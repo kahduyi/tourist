@@ -1,0 +1,119 @@
+monasebat
+	id
+	title
+	slider_id
+	about
+	rate
+	slug
+	date
+	created_at
+	updated_at
+	
+slider
+	id
+	title
+	count_pic
+	created_at
+	updated_at
+	
+
+picture
+	id
+	title
+	alt
+	src
+	slider_id
+	created_at
+	updated_at
+
+hotel
+	id
+	name
+	about
+	slider_id
+	address_id
+	advertize_tizer_src
+	view
+	created_at
+	updated_at
+
+customer_hotel
+	id
+	Paid(bool)
+	date(room)
+	created_at
+	updated_at
+
+
+service_hotel
+	id
+	title
+	hotel_id
+	description
+	cost
+	isReserve
+	slider_id
+	deadtime
+	specification
+	active
+	created_at
+	updated_at
+
+customer_service_hotel
+	id
+	service_hotel_id
+	customer_id
+	paid(bool)	
+	requestTime
+	date
+	created_at
+	updated_at
+
+customer
+	id
+	email
+	mobile
+	name
+	lastname
+	password
+	avatar
+	verify_code
+	verified_at
+	customer_code
+	ip
+	location
+	address_id
+	created_at
+	updated_at
+
+customer_room
+	Paid(bool)
+	price
+	created_at
+	updated_at
+
+room
+	name
+	about
+	price
+	isReserve
+	requestTime
+	deadtime
+	hotel_id
+	created_at
+	updated_at
+
+address
+	title
+	country_id
+	province_id
+	city_id
+	active
+	phone
+	phone_mobile
+	address
+	postcode
+	firstname
+	lastname
+	created_at
+	updated_at
